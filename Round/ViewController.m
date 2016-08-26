@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "TableViewController.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    dispatch_after(1, dispatch_get_main_queue(), ^{
+        TableViewController *tableView = [[TableViewController alloc] init];
+        [self presentViewController:tableView animated:NO completion:^{
+            
+        }];
+    });
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "TableViewController.h"
-
+#import "RoundSDWebImageViewController.h"
 @interface TableViewController ()
 
 @end
@@ -22,6 +22,24 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.title = @"圆角";
+    _items = @{
+               @"两种设置圆角方式":@[
+                       @"RoundSDWebImage",
+                       ],
+               };
+    
+    _itemsName = @{
+                   
+                   @"Test":@[
+                           @"SDWebImage中Core Graphics绘制圆角",
+                           ],
+                   };
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    [self.tableView reloadData];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +50,30 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return [[_items allKeys] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+   return [[_items objectForKey:[_items allKeys][section]] count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    cell.textLabel.text =  [_itemsName objectForKey:[_itemsName allKeys][indexPath.section]][indexPath.row];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+ 
+    RoundSDWebImageViewController *roundVC = [[RoundSDWebImageViewController alloc]init];
+    [self presentViewController:roundVC animated:YES completion:^{
+        
+    }];
+}
+
 
 /*
 // Override to support conditional editing of the table view.

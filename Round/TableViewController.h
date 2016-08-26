@@ -10,4 +10,11 @@
 
 @interface TableViewController : UITableViewController
 
+{
+    
+    NSDictionary *_items;
+    NSDictionary *_itemsName;
+}
+
+
 @end

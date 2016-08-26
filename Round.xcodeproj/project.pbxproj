@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28CA92C86309000EFB09529E /* libPods-Round.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4267C1D9A2BB1C40D384DB2D /* libPods-Round.a */; };
 		5E0E5E681D6C184A0039CCF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E5E671D6C184A0039CCF3 /* main.m */; };
 		5E0E5E6B1D6C184A0039CCF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E5E6A1D6C184A0039CCF3 /* AppDelegate.m */; };
 		5E0E5E6E1D6C184A0039CCF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E5E6D1D6C184A0039CCF3 /* ViewController.m */; };
@@ -15,6 +16,10 @@
 		5E0E5E761D6C184A0039CCF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E0E5E741D6C184A0039CCF3 /* LaunchScreen.storyboard */; };
 		5E0E5E811D6C184A0039CCF3 /* RoundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E5E801D6C184A0039CCF3 /* RoundTests.m */; };
 		5E0E5E8C1D6C184A0039CCF3 /* RoundUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E5E8B1D6C184A0039CCF3 /* RoundUITests.m */; };
+		5E0E5E9B1D6C19B70039CCF3 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E5E9A1D6C19B70039CCF3 /* TableViewController.m */; };
+		5E0E5E9E1D6C1D180039CCF3 /* RoundSDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E5E9D1D6C1D180039CCF3 /* RoundSDWebImageViewController.m */; };
+		5E0E5EA11D6C1F600039CCF3 /* UIImageView+Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E5EA01D6C1F600039CCF3 /* UIImageView+Round.m */; };
+		5E0E5EA41D6C2CD80039CCF3 /* UIImage+Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E5EA31D6C2CD80039CCF3 /* UIImage+Round.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4267C1D9A2BB1C40D384DB2D /* libPods-Round.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Round.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5748C1D2B1B6D4D4B812844A /* Pods-Round.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Round.release.xcconfig"; path = "Pods/Target Support Files/Pods-Round/Pods-Round.release.xcconfig"; sourceTree = "<group>"; };
 		5E0E5E631D6C184A0039CCF3 /* Round.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Round.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0E5E671D6C184A0039CCF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E0E5E691D6C184A0039CCF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +58,15 @@
 		5E0E5E871D6C184A0039CCF3 /* RoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0E5E8B1D6C184A0039CCF3 /* RoundUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundUITests.m; sourceTree = "<group>"; };
 		5E0E5E8D1D6C184A0039CCF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E0E5E991D6C19B70039CCF3 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		5E0E5E9A1D6C19B70039CCF3 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		5E0E5E9C1D6C1D180039CCF3 /* RoundSDWebImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundSDWebImageViewController.h; sourceTree = "<group>"; };
+		5E0E5E9D1D6C1D180039CCF3 /* RoundSDWebImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundSDWebImageViewController.m; sourceTree = "<group>"; };
+		5E0E5E9F1D6C1F600039CCF3 /* UIImageView+Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Round.h"; sourceTree = "<group>"; };
+		5E0E5EA01D6C1F600039CCF3 /* UIImageView+Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Round.m"; sourceTree = "<group>"; };
+		5E0E5EA21D6C2CD80039CCF3 /* UIImage+Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Round.h"; sourceTree = "<group>"; };
+		5E0E5EA31D6C2CD80039CCF3 /* UIImage+Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Round.m"; sourceTree = "<group>"; };
+		642DD57950F5BB04BC0D1168 /* Pods-Round.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Round.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Round/Pods-Round.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CA92C86309000EFB09529E /* libPods-Round.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +95,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		153AFB1F8540A3565FAC1714 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				642DD57950F5BB04BC0D1168 /* Pods-Round.debug.xcconfig */,
+				5748C1D2B1B6D4D4B812844A /* Pods-Round.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		45AB74F19D3FFB1859CD2F1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4267C1D9A2BB1C40D384DB2D /* libPods-Round.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E0E5E5A1D6C18490039CCF3 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +119,8 @@
 				5E0E5E7F1D6C184A0039CCF3 /* RoundTests */,
 				5E0E5E8A1D6C184A0039CCF3 /* RoundUITests */,
 				5E0E5E641D6C184A0039CCF3 /* Products */,
+				153AFB1F8540A3565FAC1714 /* Pods */,
+				45AB74F19D3FFB1859CD2F1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +141,11 @@
 				5E0E5E6A1D6C184A0039CCF3 /* AppDelegate.m */,
 				5E0E5E6C1D6C184A0039CCF3 /* ViewController.h */,
 				5E0E5E6D1D6C184A0039CCF3 /* ViewController.m */,
+				5E0E5E991D6C19B70039CCF3 /* TableViewController.h */,
+				5E0E5E9A1D6C19B70039CCF3 /* TableViewController.m */,
+				5E0E5E9C1D6C1D180039CCF3 /* RoundSDWebImageViewController.h */,
+				5E0E5E9D1D6C1D180039CCF3 /* RoundSDWebImageViewController.m */,
+				5E0E5EA51D6C54280039CCF3 /* round */,
 				5E0E5E6F1D6C184A0039CCF3 /* Main.storyboard */,
 				5E0E5E721D6C184A0039CCF3 /* Assets.xcassets */,
 				5E0E5E741D6C184A0039CCF3 /* LaunchScreen.storyboard */,
@@ -140,6 +181,17 @@
 			path = RoundUITests;
 			sourceTree = "<group>";
 		};
+		5E0E5EA51D6C54280039CCF3 /* round */ = {
+			isa = PBXGroup;
+			children = (
+				5E0E5E9F1D6C1F600039CCF3 /* UIImageView+Round.h */,
+				5E0E5EA01D6C1F600039CCF3 /* UIImageView+Round.m */,
+				5E0E5EA21D6C2CD80039CCF3 /* UIImage+Round.h */,
+				5E0E5EA31D6C2CD80039CCF3 /* UIImage+Round.m */,
+			);
+			name = round;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E0E5E901D6C184A0039CCF3 /* Build configuration list for PBXNativeTarget "Round" */;
 			buildPhases = (
+				BE0E6A1B8C7C8F630996C8BF /* [CP] Check Pods Manifest.lock */,
 				5E0E5E5F1D6C184A0039CCF3 /* Sources */,
 				5E0E5E601D6C184A0039CCF3 /* Frameworks */,
 				5E0E5E611D6C184A0039CCF3 /* Resources */,
+				147510C5B3070252856FC63B /* [CP] Embed Pods Frameworks */,
+				8819582B527853F3AA7B9647 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,14 +320,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		147510C5B3070252856FC63B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Round/Pods-Round-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8819582B527853F3AA7B9647 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Round/Pods-Round-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE0E6A1B8C7C8F630996C8BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E0E5E5F1D6C184A0039CCF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E0E5EA41D6C2CD80039CCF3 /* UIImage+Round.m in Sources */,
 				5E0E5E6E1D6C184A0039CCF3 /* ViewController.m in Sources */,
+				5E0E5EA11D6C1F600039CCF3 /* UIImageView+Round.m in Sources */,
+				5E0E5E9E1D6C1D180039CCF3 /* RoundSDWebImageViewController.m in Sources */,
 				5E0E5E6B1D6C184A0039CCF3 /* AppDelegate.m in Sources */,
 				5E0E5E681D6C184A0039CCF3 /* main.m in Sources */,
+				5E0E5E9B1D6C19B70039CCF3 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +516,7 @@
 		};
 		5E0E5E911D6C184A0039CCF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 642DD57950F5BB04BC0D1168 /* Pods-Round.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Round/Info.plist;
@@ -420,6 +528,7 @@
 		};
 		5E0E5E921D6C184A0039CCF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5748C1D2B1B6D4D4B812844A /* Pods-Round.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Round/Info.plist;
@@ -496,6 +605,7 @@
 				5E0E5E921D6C184A0039CCF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E0E5E931D6C184A0039CCF3 /* Build configuration list for PBXNativeTarget "RoundTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +614,7 @@
 				5E0E5E951D6C184A0039CCF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E0E5E961D6C184A0039CCF3 /* Build configuration list for PBXNativeTarget "RoundUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +623,7 @@
 				5E0E5E981D6C184A0039CCF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

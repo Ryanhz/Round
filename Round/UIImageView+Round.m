@@ -6,13 +6,13 @@
 //  Copyright © 2016年 hzf. All rights reserved.
 //
 
-#import "UIImageView+Cache.h"
+#import "UIImageView+Round.h"
 #import "UIImageView+WebCache.h"
 #import "UIImage+Round.h"
 
 static NSString *DSRoundImagePreString = @"sssssssss";
 
-@implementation UIImageView (Cache)
+@implementation UIImageView (Round)
 
 
 - (void)setIsRound:(BOOL)isRound withSize:(CGSize)size {
@@ -39,6 +39,10 @@ static NSString *DSRoundImagePreString = @"sssssssss";
     
     url = [NSURL URLWithString:urlStr];
     
+    if (radius == 0) {
+        radius = self.frame.size.width/2;
+    }
+    
     if (radius != 0.0) {
         NSString *cacheUrlStr = [urlStr stringByAppendingString:@"radiusCache"];
         UIImage *cacheImage = [[SDImageCache sharedImageCache]imageFromDiskCacheForKey:cacheUrlStr];
@@ -47,6 +51,12 @@ static NSString *DSRoundImagePreString = @"sssssssss";
         } else {
             [self sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:placeHolderStr] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                
+                
+                if (error) {
+                    NSLog(@"error%@:",error);
+                    return ;
+                }
+                
                 UIImage *radiusImage = [UIImage createRoundedRectImage:image size:self.frame.size radius:radius];
                 self.image = radiusImage;
                 [[SDImageCache sharedImageCache] storeImage:radiusImage forKey:cacheUrlStr];

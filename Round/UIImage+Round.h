@@ -10,4 +10,8 @@
 
 @interface UIImage (Round)
 
+
++ (id)createRoundedRectImage:(UIImage*)image size:(CGSize)size radius:(NSInteger)r;
+
+
 @end

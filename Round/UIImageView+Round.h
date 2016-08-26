@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SDImageCache.h"
 
-@interface UIImageView (Cache)
-
-
+@interface UIImageView (Round)
 
 - (void)FE_loadImageURLStr:(NSString *)urlStr placeHolderImageName:(NSString *)placeHolderStr radius:(CGFloat)radius;
 
